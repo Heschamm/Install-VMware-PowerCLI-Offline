@@ -270,10 +270,10 @@ if ($SelectedBundle) {
         $success = Install-PowerCLIFromBundle -BundlePath $SelectedBundle
         
         if ($success) {
-            Write-Host "`n🎉 PowerCLI installation completed successfully!" -ForegroundColor Green
+            Write-Host "`n PowerCLI installation completed successfully!" -ForegroundColor Green
             Show-ConfigurationMenu
         } else {
-            Write-Host "`n❌ PowerCLI installation failed." -ForegroundColor Red
+            Write-Host "`n PowerCLI installation failed." -ForegroundColor Red
         }
     } else {
         Write-Host "Installation cancelled by user." -ForegroundColor Yellow
